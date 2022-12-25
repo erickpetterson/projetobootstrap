@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <title>Sistema Web com Bootstrap</title>
+    <style>
+        .container-fluid {
+            background-color: indigo;
+        }
+
+        .cabecalho {
+            background: url(assets/img/bg.png) no-repeat;
+            background-size: cover;
+        }
+
+        .receba {
+            background: url(assets/img/bg-footer.png) no-repeat center bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Impotando a biblioteca JQUERY e o JavaScript do Bootstrap-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <header class="cabecalho text-white text-center text-lg-start">
+        <div class="">
+            <!--Logo e Barra de Navegação-->
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12 col-lg-6">
+                        <!--Logo-->
+                        <h1>
+                            <img src="assets/img/Bootstrap.png" width="10%">
+                        </h1>
+
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!--Barra de navegação-->
+                        <nav>
+                            <ul class="nav justify-content-center justify-content-lg-end">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" href="#">Diferenciais</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Vantagens</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="login.html">Inscreva-se</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h2 class="pt-5 pb-3">Crie sites rápidos e responsivos com Bootstrap</h2>
+                    <p class="pb-3">Projete e personalize rapidamente aplicações responsivas para dispositivos moveis
+                        com Bootstrap</p>
+
+                    <div class="pb-5">
+                        <a href="#" class="btn btn-primary">Comprar agora</a>
+                        <a href="#" class="btn btn-outline-light">Conhecer mais</a>
+                    </div>
+                </div>
+
+                <div class="col-6">
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--Fím do cabeçalho-->
+
+    <main>
+        <!--Início do conteúdo principal-->
+        <!--Início do Carousel-->
+        <div class="container pt-5">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2500">
+                        <a href="https://www.google.com.br/" target="_blank">
+                            <img src="assets/img/slid1.jpg" class="d-block w-100 img-fluid" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block bg-dark" style="--bs-bg-opacity: .5;">
+                            <h5>Periquito-australiano</h5>
+                            <p>O periquito australiano é uma pequena espécie de ave de cauda longa.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="assets/img/slid2.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block bg-dark" style="--bs-bg-opacity: .5;">
+                            <h5>Bem-te-vi</h5>
+                            <p>O bem-te-vi é uma ave passeriforme da família dos tiranídeos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="assets/img/slid3.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block bg-dark" style="--bs-bg-opacity: .5;">
+                            <h5>Martim-pescador</h5>
+                            <p>O martim-pescador é uma ave que em geral tem penas de cores vivas.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <section class="container pt-5 ">
+            <!--Início do Conteudo 1-->
+            <div class="row pt-5 pb-5">
+                <div class="col-12 col-lg-4 text-center">
+                    <img src="assets/img/icon1.png" class="img-thumbnail img-fluid">
+                    <h5 class="pt-2">Card Title</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, qui, eos minus dicta sunt
+                        itaque.
+                    </p>
+
+                </div>
+                <div class="col-12 col-lg-4 text-center pt-4 pt-lg-0">
+                    <img src="assets/img/icon2.png" class="img-thumbnail img-fluid">
+                    <h5 class="pt-2">Card Title</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, qui, eos minus dicta sunt
+                        itaque.
+                    </p>
+
+                </div>
+                <div class="col-12 col-lg-4 text-center pt-4 pt-lg-0">
+                    <img src="assets/img/icon3.png" class="img-thumbnail img-fluid">
+                    <h5 class="pt-2">Card Title</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, qui, eos minus dicta sunt
+                        itaque.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+        <!--Fím do Conteudo 1-->
+
+        <section class="bg-light">
+            <!--Início do Conteudo 2-->
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-12 col-lg-7 align-self-center">
+                        <img src="assets/img/image1.png" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-5 align-self-center pt-3 pt-lg-0">
+                        <h3>Receba no seu e-mail</h3>
+                        <p class="lead">Etapas para criação de um Sistema Web eficiente</p>
+                        <ul>
+                            <li>Ouvir o cliente (Briefing)</li>
+                            <li>Definir o público alvo</li>
+                            <li>Conteúdo (Pesqueisa)</li>
+                            <li>Layout + Design</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--Fím do Conteudo 2-->
+
+        <section class="receba pt-5 pb-5">
+            <!--Início conteúdo 3-->
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-12 col-lg-12 text-center">
+                        <h4>Receba agora no seu e-mail</h4>
+                        <p class="lead">O bootstrap de ajuda com o layout dos seus projetos</p>
+                    </div>
+                </div>
+
+                <form method="POST" class="row justify-content-center pt-3">
+                    <div class="col-12 col-lg-4 pb-3 pb-lg-0">
+                        <input type="email" class="form-control" placeholder="Exemplo: seuemail@gmail.com">
+
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <input type="submit" value="Receber" class="form-control btn btn-success">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+        <!--Fím do Conteudo 3-->
+
+
+    </main>
+
+    <footer class="container-fluid">
+        <!--Início do Rodapé-->
+        <div class="row">
+            <div class="col-12 col-lg-12 text-center text-white pt-3">
+                <img src="assets/img/bootstrap1.svg" width="15%" class="pb-2 img-fluid">
+                <p>&copy; 2022 - Bootstrap - O melhor framework web - Todos os direitos reservados. Atualmente v5.2</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-12 text-end text-white">
+                <p><a href="#">Voltar ao início</a> </p>
+            </div>
+        </div>
+
+    </footer>
+    <!--Fím do Rodapé-->
+
+</body>
+
+</html>
